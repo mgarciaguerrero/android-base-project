@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign size label
-        uses: pascalgn/size-label-action@v0.2.1
+        uses: ./actions/sizelabel/action.yml
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+            IGNORED: "*Test.*"
