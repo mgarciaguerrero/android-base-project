@@ -8,4 +8,4 @@ jobs:
         uses: ./actions/sizelabel/action.yml
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-            IGNORED: "*Test.*"
+          IGNORED: "*Test.*"
